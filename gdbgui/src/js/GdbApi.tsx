@@ -260,7 +260,7 @@ const GdbApi = {
    */
   waiting_for_response: function() {
     store.set("waiting_for_response", true);
-    const WAIT_TIME_SEC = 10;
+    const WAIT_TIME_SEC = 30;
     // @ts-expect-error ts-migrate(2769) FIXME: Argument of type 'null' is not assignable to param... Remove this comment to see the full error message
     clearTimeout(GdbApi._waiting_for_response_timeout);
     // @ts-expect-error ts-migrate(2322) FIXME: Type 'Timeout' is not assignable to type 'null'.
